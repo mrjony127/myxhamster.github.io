@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Categories</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margn:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  background:#121212;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  overflow-x:hidden;
+}
+
+/* Header */
+.header{
+  padding:20px 15px 15px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(18,18,18,.9);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.header h1{
+  font-size:28px;
+  letter-spacing:1px;
+  background:linear-gradient(135deg, #fff 20%, #ff4b4b 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:slideDown 0.8s ease;
+}
+
+/* Grid */
+.categories{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:12px;
+  padding:16px;
+}
+
+/* Box */
+.categories a{
+  min-height:55px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:12px 10px;
+  color:#e0e0e0;
+  text-decoration:none;
+  
+  background:linear-gradient(145deg, #262626, #1c1c1c);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;
+  font-size:16px;
+  font-weight:500;
+  
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+  
+  /* Initial state for bounce/fade-in animation */
+  opacity:0;
+  transform:translateY(40px) scale(0.8);
+  animation: bounceIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Hover Effect */
+.categories a:hover{
+  background:linear-gradient(145deg, #383838, #242424);
+  border-color:rgba(255, 75, 75, 0.5);
+  transform:translateY(-6px) scale(1.04);
+  box-shadow:0 12px 30px rgba(255, 75, 75, 0.25);
+  color:#ffffff;
+}
+
+/* Active / Touch Effect */
+.categories a:active{
+  transform:scale(0.95) translateY(0);
+}
+
+/* Staggered Animation Delays for each box */
+.categories a:nth-child(1){animation-delay:.08s}
+.categories a:nth-child(2){animation-delay:.16s}
+.categories a:nth-child(3){animation-delay:.24s}
+.categories a:nth-child(4){animation-delay:.32s}
+.categories a:nth-child(5){animation-delay:.40s}
+.categories a:nth-child(6){animation-delay:.48s}
+.categories a:nth-child(7){animation-delay:.56s}
+.categories a:nth-child(8){animation-delay:.64s}
+.categories a:nth-child(9){animation-delay:.72s}
+.categories a:nth-child(10){animation-delay:.80s}
+.categories a:nth-child(11){animation-delay:.88s}
+.categories a:nth-child(12){animation-delay:.96s}
+.categories a:nth-child(13){animation-delay:1.04s}
+.categories a:nth-child(14){animation-delay:1.12s}
+
+/* Keyframes with Bounce */
+@keyframes bounceIn{
+  0%{
+    opacity:0;
+    transform:translateY(40px) scale(0.8);
+  }
+  60%{
+    opacity:1;
+    transform:translateY(-8px) scale(1.05);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+}
+
+@keyframes slideDown{
+  from{
+    opacity:0;
+    transform:translateY(-20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media(max-width:500px){
+  .header{
+    padding:16px 12px 12px;
+  }
+  .header h1{
+    font-size:24px;
+  }
+  .categories{
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:10px;
+    padding:12px;
+  }
+  .categories a{
+    min-height:52px;
+    font-size:15px;
+    border-radius:10px;
+  }
+}
+
+@media(max-width:350px){
+  .categories{
+    gap:8px;
+  }
+  .categories a{
+    font-size:13.5px;
+    min-height:46px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1>PARKAR SITE</h1>
+</header>
+
+<div class="categories">
+  <a href="https://xhamster46.desi/categories/bangladeshi">Bangladeshi </a>
+  <a href="https://xhamster46.desi/categories/indian">Indian </a>
+  <a href="https://xhamster46.desi/categories/russian">Russian </a>
+  <a href="https://xhamster46.desi/categories/american">American </a>
+  <a href="https://xhamster46.desi/categories/pakistani">Pakistani </a>
+  <a href="https://xhamster46.desi/categories/japanese">Japanese </a>
+  <a href="https://xhamster46.desi/categories/saudi">Saudi </a>
+  <a href="https://xhamster46.desi/categories/argentinian">Argentinian </a>
+  <a href="https://xhamster46.desi/categories/colombian">Colombian </a>
+  <a href="https://xhamster46.desi/categories/spanish">Spanish </a>
+  <a href="https://xhamster46.desi/categories/brazilian">Brazilian </a>
+  <a href="https://xhamster46.desi/categories/chinese">Chinese </a>
+  <a href="https://xhamster46.desi/categories/korean">Korean </a>
+  <a href="https://xhamster46.desi/categories/british">British </a>
+</div>
+
+</body>
+</html>
